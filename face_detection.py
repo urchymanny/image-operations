@@ -68,7 +68,7 @@ def testing(test_img, avg_faces, eigen_faces, training_weights,):
 dir = "images/"
 data = training_images(dir)
 
-test_image = cv.imread('jack.jpg')
+test_image = cv.imread('test_data/jack.jpg')
 average_faces, eigen_f, t_weights = training(data)
 
 print(testing(test_image, average_faces, eigen_f, t_weights))
